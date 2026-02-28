@@ -1,0 +1,120 @@
+@import url(https://db.onlinewebfonts.com/c/e5cf4323214de97c3428d64ece016410?family=Integral+CF);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 275 70% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
+
+    --accent: 312 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 312 100% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 312 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 15%;
+    --sidebar-ring: 312 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, #00ff5e), #00ff5e);
+  }
+
+  .text-stroke {
+    -webkit-text-stroke: 1.5px hsl(0, 0%, 100%);
+    color: transparent;
+  }
+
+  .text-stroke-primary {
+    -webkit-text-stroke: 1.5px #00ff5e;
+    color: transparent;
+  }
+
+  .section-full {
+    @apply min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24;
+  }
+
+  .heading-editorial {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply text-4xl md:text-6xl lg:text-8xl font-bold leading-[0.95] tracking-tight uppercase;
+  }
+
+  .heading-section {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply text-2xl md:text-4xl lg:text-5xl font-bold leading-[1.1] tracking-tight uppercase;
+  }
+
+  .body-quote {
+    font-family: 'Inter', sans-serif;
+    @apply text-base md:text-lg leading-relaxed;
+  }
+
+  .stat-number {
+    font-family: 'Space Grotesk', sans-serif;
+    @apply text-6xl md:text-8xl lg:text-[10rem] font-bold leading-none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #00ff5e;
+  color: hsl(0, 0%, 100%);
+}
