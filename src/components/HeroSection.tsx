@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroImage from "@/assets/BeMoreHuman.png";
 
 const HeroSection = () => {
   return (
@@ -10,7 +11,7 @@ const HeroSection = () => {
         transition={{ duration: 1, delay: 0.5 }}
       >
         <img
-          src="/BeMoreHuman.png"
+          src={heroImage}
           alt="Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -22,10 +23,11 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 1.5 }}
       >
-        <span className="text-muted-foreground text-xs tracking-[0.2em] uppercase font-body">
+        <span className="text-muted-foreground text-xs tracking-[0.2em] uppercase font-body text-center">
           you adapted to everything.
-          did you adapt away from yourself too?
+          <br />
         </span>
+
         <motion.div
           className="w-px h-8 bg-muted-foreground/40"
           animate={{ scaleY: [1, 0.5, 1] }}
