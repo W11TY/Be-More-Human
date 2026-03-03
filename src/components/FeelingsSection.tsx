@@ -20,7 +20,7 @@ const FeelingsSection = () => {
           <ScrollReveal delay={0.1}>
             <div className="text-center">
               <p className="stat-number text-foreground"></p>
-              <p className="text-muted-foreground font-body text-lg mt-3"></p>
+              <p className="text-muted-foreground font-body text-lg mt-3">People spend freely on things that numb them, just to feel a little more like themselves, even while knowing it slowly takes something away.</p>
               <p className="text-primary font-display text-2xl font-bold mt-1">
                 
               </p>

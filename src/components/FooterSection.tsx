@@ -21,7 +21,7 @@ const FooterSection = () => {
             
             {/* Apple-like minimal button */}
             <button
-              onClick={() => console.log("Continue")}
+              onClick={() => window.location.href = "https://blueroseone.com/store/cart"}
               className="
                 px-8 py-3
                 rounded-full
@@ -30,10 +30,9 @@ const FooterSection = () => {
                 transition-all duration-200 ease-out
                 hover:scale-[1.02] hover:shadow-md
                 active:scale-[0.96]
-                border border-border
-              "
-            >
-              Own The Book 
+                border border-border"
+                >
+              Own The Book
             </button>
 
             <div>
