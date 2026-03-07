@@ -133,7 +133,7 @@ const Product = () => {
               <button
                 onClick={() =>
                   (window.location.href =
-                    "https://blueroseone.com/store/cart")
+                    "https://blueroseone.com/store/product/be-more-human")
                 }
                 className="w-full border border-foreground py-4 font-display text-sm tracking-[0.3em] uppercase text-foreground hover:bg-foreground hover:text-background transition-colors duration-300"
               >
@@ -143,11 +143,11 @@ const Product = () => {
               <button
                 onClick={() =>
                   (window.location.href =
-                    "https://blueroseone.com/store/cart")
+                    "https://blueroseone.com/store/product/be-more-human")
                 }
                 className="w-full bg-primary py-4 font-display text-sm tracking-[0.3em] uppercase text-primary-foreground hover:bg-primary/80 transition-colors duration-300"
               >
-                Buy Now
+                Read Book
               </button>
             </div>
           </ScrollReveal>
