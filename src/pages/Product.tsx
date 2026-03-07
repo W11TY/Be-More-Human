@@ -81,8 +81,9 @@ const Product = () => {
 
           <ScrollReveal delay={0.2}>
             <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-md mb-10">
-              A printed collection of stories, data, and reflections from over 200 contributors.
-              Hardcover. 196 pages. Designed and produced by I/D.W studio.
+            A printed confrontation with the world we’ve normalized — and the self we’ve quietly abandoned.
+            <span className="text-primary">Be More Human</span> is not here to comfort you; <p>it’s here to wake something up.</p>
+
             </p>
           </ScrollReveal>
 
@@ -90,14 +91,14 @@ const Product = () => {
             <div className="border-t border-border pt-8 mb-8">
               <div className="flex items-baseline gap-4 mb-1">
                 <span className="font-display text-3xl md:text-4xl font-bold text-foreground">
-                  $48
+                  ₹499
                 </span>
                 <span className="text-muted-foreground font-body text-xs tracking-[0.2em] uppercase">
-                  USD
+                  
                 </span>
               </div>
               <p className="text-muted-foreground font-body text-xs">
-                Free shipping worldwide
+                
               </p>
             </div>
           </ScrollReveal>
@@ -158,7 +159,7 @@ const Product = () => {
                 {
                   title: "Details",
                   content:
-                    "Hardcover, matte finish. 196 pages. 8.5 × 11 inches. Printed on 148gsm uncoated stock. Smyth-sewn binding.",
+                    "Softcover with a gloss finish. 200 pages, 5 × 8 inches, printed on 148gsm uncoated stock.",
                 },
                 {
                   title: "Shipping",
