@@ -48,7 +48,7 @@ const Pamp = () => {
               
             </p>
             <p className="text-foreground/80 text-base md:text-lg">
-               You found this book the moment <br/>
+              You found this book the moment <br/>
               you needed it most.
             </p>
           </motion.div>
@@ -57,10 +57,16 @@ const Pamp = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2"
             {...fade(1.3)}
           >
-            <a
+                      <a
             href="/readbook"
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+
               trackEvent("click_read_book", { page: "pamp" });
+
+              setTimeout(() => {
+                window.location.href = "/readbook";
+              }, 120);
             }}
             className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
           >

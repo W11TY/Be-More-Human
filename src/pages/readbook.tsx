@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { trackEvent } from "@/utils/analytics";
+
 
 const page = {
   chapter: "ACT III",
@@ -88,7 +88,7 @@ const ReadBook = () => {
 
         {/* Page number */}
         <footer className="absolute bottom-8 left-0 right-0 text-center">
-          <span className="text-sm tracking-wider" style={{ color: "#9a8f82" }}>1</span>
+          <span className="text-sm tracking-wider" style={{ color: "#9a8f82" }}>(1)</span>
         </footer>
       </motion.div>
 
