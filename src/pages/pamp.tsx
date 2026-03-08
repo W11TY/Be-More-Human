@@ -10,9 +10,11 @@ const fade = (delay = 0) => ({
 const Pamp = () => {
   return (
     <div
-      className="text-foreground min-h-screen relative overflow-hidden"
-      style={{ fontFamily: "'Cinzel Decorative', cursive" }}
-    >
+      className="text-foreground min-h-screen relative overflow-hidden" >
+        <motion.h1
+        className="font-bold text-2xl sm:text-3xl md:text-4xl"
+        style={{ fontFamily: "'Integral CF', sans-serif" }}
+>     </motion.h1>
       {/* Background GIF */}
       <div
         className="fixed inset-0 z-0"
@@ -42,10 +44,11 @@ const Pamp = () => {
 
           <motion.div className="space-y-1" {...fade(0.8)}>
             <p className="text-muted-foreground text-sm md:text-base">
-              Everything runs.
+              
             </p>
             <p className="text-foreground/80 text-base md:text-lg">
-              Nothing feels.
+               You found this book the moment <br/>
+              <span className="text-primary font-semibold">you needed it most.</span>
             </p>
           </motion.div>
 
@@ -54,18 +57,11 @@ const Pamp = () => {
             {...fade(1.3)}
           >
             <a
-              href="#reclaim"
-              className="px-6 py-3 text-xs tracking-[0.1em] uppercase text-muted-foreground border border-border/50 hover:border-muted-foreground/50 transition-colors duration-700"
-            >
-              Read the First Page
-            </a>
-
-            <a
-              href="https://blueroseone.com/store/product/be-more-human"
+            href="/readbook"
               className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
-            >
-              Get the Book
-            </a>
+          >
+            Read the Book
+          </a>
           </motion.div>
 
         </div>
@@ -93,7 +89,7 @@ const Pamp = () => {
       >
         <motion.div className="max-w-lg" {...fade()}>
           <p className="text-muted-foreground/40 text-[10px] tracking-[0.4em] uppercase mb-10">
-            ii
+            [i]
           </p>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight text-foreground/85 mb-6">
@@ -103,7 +99,7 @@ const Pamp = () => {
           </h2>
 
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-            It's something quieter — and a lot more common than anyone admits.
+            It's something quieter and a lot more common than anyone admits.
           </p>
         </motion.div>
       </section>
@@ -112,7 +108,7 @@ const Pamp = () => {
       <section className="relative z-10 min-h-[80vh] flex items-center justify-end px-6 md:px-16 lg:px-24">
         <motion.div className="max-w-lg text-right" {...fade()}>
           <p className="text-muted-foreground/40 text-[10px] tracking-[0.4em] uppercase mb-10">
-            iii
+            [ii]
           </p>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight text-foreground/85 mb-6">
@@ -129,7 +125,7 @@ const Pamp = () => {
       <section className="relative z-10 min-h-[80vh] flex items-center justify-center px-6">
         <motion.div className="max-w-md text-center" {...fade()}>
           <p className="text-muted-foreground/40 text-[10px] tracking-[0.4em] uppercase mb-10">
-            iv
+            [iii]
           </p>
 
           <h2 className="text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-tight text-foreground/85 mb-2">
@@ -150,18 +146,18 @@ const Pamp = () => {
       <section className="relative z-10 min-h-[80vh] flex items-center justify-center px-6">
         <motion.div className="max-w-md text-center" {...fade()}>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-light leading-snug tracking-tight text-foreground/90 mb-6">
-            If you've ever felt like you're living someone else's version of your life —
+            If you've ever felt like you're living someone else's version of your life 
           </h2>
 
           <p className="text-foreground/60 text-base md:text-lg mb-14">
             this book was written for that feeling.
           </p>
 
-          <a
-            href="https://blueroseone.com/store/product/be-more-human"
-            className="inline-block px-8 py-4 text-xs tracking-[0.1em] uppercase border border-border/50 text-muted-foreground hover:text-foreground/70 hover:border-muted-foreground/40 transition-all duration-700"
+         <a
+            href="/readbook"
+              className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
           >
-            Get the Book
+            Read the Book
           </a>
         </motion.div>
       </section>

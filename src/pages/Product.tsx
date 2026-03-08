@@ -81,8 +81,8 @@ const Product = () => {
 
           <ScrollReveal delay={0.2}>
             <p className="text-muted-foreground font-body text-sm leading-relaxed max-w-md mb-10">
-            A printed confrontation with the world we’ve normalized — and the self we’ve quietly abandoned.
-            <span className="text-primary">Be More Human</span> is not here to comfort you; <p>it’s here to wake something up.</p>
+            A printed confrontation with the world we’ve normalized and the self we’ve quietly abandoned.
+            <span className="text-primary"> <br/> Be More Human</span> is not here to comfort you; <p>it’s here to wake something up.</p>
 
             </p>
           </ScrollReveal>
