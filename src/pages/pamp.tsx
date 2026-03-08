@@ -53,7 +53,7 @@ const Landing = () => {
               Read the First Page
             </a>
             <a
-              href="https://blueroseone.com/store/cart"
+              href="https://blueroseone.com/store/product/be-more-human"
               className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
             >
               Get the Book
@@ -136,7 +136,7 @@ const Landing = () => {
             this book was written for that feeling.
           </p>
           <a
-            href="https://blueroseone.com/store/cart"
+            href="https://blueroseone.com/store/product/be-more-human"
             className="inline-block px-8 py-4 text-xs tracking-[0.1em] uppercase border border-border/50 text-muted-foreground hover:text-foreground/70 hover:border-muted-foreground/40 transition-all duration-700"
           >
             Get the Book
