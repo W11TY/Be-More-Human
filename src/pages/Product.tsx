@@ -141,18 +141,19 @@ const Product = () => {
                 Add to Cart
               </button>
 
-             <button
+              <button
               onClick={() => {
-                  trackEvent("click_buy_book", { page: "pamp" });
+                trackEvent("click_buy_book", { page: "pamp" });
 
-                  setTimeout(() => {
-                    window.location.href =
-                      "https://blueroseone.com/store/product/be-more-human";
-                  }, 150);
-                }}
-              >
-                Own The Book 
-              </button>
+                setTimeout(() => {
+                  window.location.href =
+                    "https://blueroseone.com/store/product/be-more-human";
+                }, 120);
+              }}
+              className="w-full bg-primary py-4 font-display text-sm tracking-[0.3em] uppercase text-primary-foreground hover:bg-primary/80 transition-colors duration-300"
+            >
+              Buy Book
+            </button>
             </div>
           </ScrollReveal>
 
