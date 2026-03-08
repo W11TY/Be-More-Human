@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { trackEvent } from "@/utils/analytics";
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 12 },
@@ -48,7 +49,7 @@ const Pamp = () => {
             </p>
             <p className="text-foreground/80 text-base md:text-lg">
                You found this book the moment <br/>
-              <span className="text-primary font-semibold">you needed it most.</span>
+              you needed it most.
             </p>
           </motion.div>
 
@@ -58,7 +59,10 @@ const Pamp = () => {
           >
             <a
             href="/readbook"
-              className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
+            onClick={() => {
+              trackEvent("click_read_book", { page: "pamp" });
+            }}
+            className="px-6 py-3 text-xs tracking-[0.1em] uppercase bg-foreground/10 text-foreground/70 hover:bg-foreground/15 transition-colors duration-700"
           >
             Read the Book
           </a>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, Minus, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
 import ScrollReveal from "@/components/ScrollReveal";
+import { trackEvent } from "@/utils/analytics";
 
 import book from "@/assets/bemorehuman.jpg"
 import book1 from "@/assets/bemorehumanfront.jpg";
@@ -140,14 +141,17 @@ const Product = () => {
                 Add to Cart
               </button>
 
-              <button
-                onClick={() =>
-                  (window.location.href =
-                    "https://blueroseone.com/store/product/be-more-human")
-                }
-                className="w-full bg-primary py-4 font-display text-sm tracking-[0.3em] uppercase text-primary-foreground hover:bg-primary/80 transition-colors duration-300"
+             <button
+              onClick={() => {
+                  trackEvent("click_buy_book", { page: "pamp" });
+
+                  setTimeout(() => {
+                    window.location.href =
+                      "https://blueroseone.com/store/product/be-more-human";
+                  }, 150);
+                }}
               >
-                Read Book
+                Own The Book 
               </button>
             </div>
           </ScrollReveal>

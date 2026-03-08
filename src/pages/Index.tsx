@@ -11,6 +11,7 @@ import AccomplishmentsSection from "@/components/AccomplishmentsSection";
 import WisdomSection from "@/components/WisdomSection";
 import WordCloudSection from "@/components/WordCloudSection";
 import FooterSection from "@/components/FooterSection";
+import { trackEvent } from "@/utils/analytics";
 
 const Index = () => {
   return (
