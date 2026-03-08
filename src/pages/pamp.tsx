@@ -17,7 +17,7 @@ const Pamp = () => {
       <div
         className="fixed inset-0 z-0"
         style={{
-          backgroundImage: 'url("/BeMoreHumanGIF.gif")',
+          backgroundImage: 'url("https://bemorehuman.co.in/BeMoreHumanGIF.gif")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
