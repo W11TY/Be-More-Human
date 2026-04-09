@@ -134,7 +134,7 @@ const Product = () => {
               <button
                 onClick={() =>
                   (window.location.href =
-                    "https://blueroseone.com/store/product/be-more-human")
+                    "https://www.amazon.in/Be-More-Human-Akshat-Tiwari/dp/9375429563")
                 }
                 className="w-full border border-foreground py-4 font-display text-sm tracking-[0.3em] uppercase text-foreground hover:bg-foreground hover:text-background transition-colors duration-300"
               >
@@ -147,7 +147,7 @@ const Product = () => {
 
                 setTimeout(() => {
                   window.location.href =
-                    "https://blueroseone.com/store/product/be-more-human";
+                    "https://www.amazon.in/Be-More-Human-Akshat-Tiwari/dp/9375429563";
                 }, 120);
               }}
               className="w-full bg-primary py-4 font-display text-sm tracking-[0.3em] uppercase text-primary-foreground hover:bg-primary/80 transition-colors duration-300"
